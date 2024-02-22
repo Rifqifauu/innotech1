@@ -1,0 +1,82 @@
+body {
+    font-family: 'Istok Web', sans-serif !important;
+    scroll-behavior: smooth !important;
+}
+
+.text {
+    font-family: 'Istok Web', sans-serif !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #FF725E !important;
+}
+
+nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    /* Nilai z-index yang cukup tinggi */
+}
+
+.btn-primary {
+    width: 7em !important;
+    border-radius: 15px !important;
+    --bs-btn-color: #000000 !important;
+    --bs-btn-bg: #ff725e !important;
+    --bs-btn-border-color: #ff725e !important;
+    --bs-btn-hover-color: #ff725e !important;
+    --bs-btn-hover-bg: #000000 !important;
+    --bs-btn-hover-border-color: #ff725e !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253 !important;
+    --bs-btn-active-color: #000000 !important;
+    --bs-btn-active-bg: #ff725e !important;
+    --bs-btn-active-border-color: #ff725e !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+    --bs-btn-disabled-color: #000000 !important;
+    --bs-btn-disabled-bg: #ff725e !important;
+    --bs-btn-disabled-border-color: #ff725e !important;
+}
+
+.row {
+    margin-left: 3em !important;
+    margin-top: 3em !important;
+    margin-right: 3em !important;
+    margin-bottom: 5em !important;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    body {
+        padding: 1em 1em 1em 1em !important;
+    }
+    nav {
+        position: relative !important;
+        top: 0 !important;
+        /* Nilai z-index yang cukup tinggi */
+    }
+    .row {
+        padding: 0 0 0 0 !important;
+        margin: 0 0 0 0 !important;
+    }
+    h1 {
+        padding-top: 10px;
+    }
+    #home {
+        flex-direction: column-reverse;
+    }
+    iframe {
+        display: none;
+    }
+    .navbar-brand>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5em;
+    }
+}

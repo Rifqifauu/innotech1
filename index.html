@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid mt-2">
+            <a class="navbar-brand ms-5" href=""><img src="profil.png" style="height:3em" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end me-5 pe-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ps-3">
+                        <a id='home-link' class="nav-link" aria-current="page" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item ps-3">
+                        <a class="nav-link" href="#services">Layanan</a>
+                    </li>
+                    <li class="nav-item ps-3">
+                        <a class="nav-link" href="#us">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item ps-3">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class='container-fluid mx-auto'>
+        <div class='row justify-content-between' id="home">
+            <div class="col-md-5">
+                <h1 class="text" style="font-size: 3em;"><strong> Selamat <span style="color: #ff725e;">Datang</span></strong></h1>
+                <h3 id="typewriter-text" class="mt-3 position-absolute" style="color: #ff725e;"></h3>
+                <p class="mt-5 pt-5">Dengan semangat kreativitas dan komitmen yang tinggi, kami mengubah ide menjadi solusi yang inovatif. Masa depan yang cerah ada di tangan kita!</p>
+                <button class="btn btn-md btn-primary mt-4 ">Hire Us</button>
+            </div>
+            <div class="col-md-6">
+                <img src="b.jpg" class="img img-fluid" alt="">
+            </div>
+        </div>
+        <div class="container" id="services">
+            <h2 class="text-center pb-3 pt-4 mt-3">Layanan</h2>
+            <div class="card-container row flex-nowrap overflow-x-auto justify-content-between overflow-y-hidden">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem; height: 29em;">
+                        <img src="uiux.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>UI/UX Design</h5>
+                            <p class="card-text">Tingkatkan pengalaman pengguna dengan desain menarik. UI/UX yang memikat, memudahkan navigasi, dan meningkatkan interaksi pelanggan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem; height: 29em;">
+                        <img src="gp.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>Desain Grafis</h5>
+                            <p class="card-text">Visualisasi kreatif yang memukau. Desain grafis yang unik dan berkesan, sesuai kebutuhan merek Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem; height: 29em;">
+                        <img src="web.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>Web Development</h5>
+                            <p class="card-text">Layanan pengembangan web yang responsif, inovatif, dan dapat disesuaikan untuk mendukung pertumbuhan bisnis Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+
+    </div>
+    <div class='row justify-content-between' id="us">
+        <h2 class='text-center pt-5 mt-5'>Tentang
+            <span style="color: #ff725e;">Kami</span>
+        </h2>
+        <div class="col-md-5"><img class="img-fluid" src="profil.png" alt=""></div>
+        <div class="col-md-5 d-flex align-items-center me-5">
+            <p>InnoTech adalah perusahaan inovatif yang berfokus pada teknologi digital dan solusi kreatif. Kami mendedikasikan diri untuk menciptakan pengalaman digital yang luar biasa bagi pelanggan kami.<br><br> Kami memadukan keahlian dalam pengembangan
+                web, pembuatan aplikasi, dan desain grafis untuk memberikan solusi untuk para klien.</p>
+        </div>
+    </div>
+    <div class="row justify-content-evenly" id="kontak">
+        <h2 class='text-center pb-5 pt-5 mt-3'>Kontak</h2>
+        <div class="col-md-5">
+            <form action="#">
+                <label class='form-label' for="nama">Nama:</label>
+                <input class='form-control' type="text" id="nama" name="nama" required>
+                <label class='form-label' for="email">Email:</label>
+                <input class='form-control' type="email" id="email" name="email" required>
+                <label class='form-label' for="pesan">Pesan:</label>
+                <textarea style="height: 100px;" class='form-control' id="pesan" name="pesan" required></textarea>
+                <button class="btn btn-md btn-primary mt-3" onclick="sendwhatsapp();">Kirim Pesan</button>
+            </form>
+        </div>
+        <div class="col-md-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.1233129295426!2d109.34060010178032!3d-7.424753697613131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6559383eb988df%3A0xad2f951da57445a0!2sGriya%20kost%20Rizki!5e0!3m2!1sid!2sid!4v1701745901943!5m2!1sid!2sid"
+                height="100%" width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+    <script>
+        const texts = [
+            "Kami memberikan layanan...",
+            "UI/UX Design",
+            "Web Development",
+            "Graphic Design"
+        ]; // Daftar teks yang ingin ditampilkan
+
+        const speed = 50; // Kecepatan typewriter (dalam milidetik per karakter)
+        let textIndex = 0;
+        let charIndex = 0;
+        const typewriterText = document.getElementById("typewriter-text");
+
+        function type() {
+            if (charIndex < texts[textIndex].length) {
+                typewriterText.innerHTML += texts[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, speed);
+            } else {
+                setTimeout(erase, 1000); // Tunggu 1 detik sebelum menghapus teks
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typewriterText.innerHTML = texts[textIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, speed);
+            } else {
+                textIndex = (textIndex + 1) % texts.length; // Pindah ke teks berikutnya
+                setTimeout(type, 500); // Tunggu 0.5 detik sebelum menampilkan teks berikutnya
+            }
+        }
+
+        // Panggil fungsi type saat halaman dimuat
+        window.onload = function() {
+            type();
+        };
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mendapatkan semua tautan navigasi dengan kelas "smooth-scroll"
+            const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+
+            // Menambahkan event listener untuk setiap tautan navigasi
+            smoothScrollLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Mendapatkan target elemen dengan menggunakan id dari tautan href
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    // Menggunakan scrollIntoView untuk menggulir ke elemen target dengan efek smooth scroll
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Mendapatkan elemen tautan "Home" berdasarkan ID
+            const homeLink = document.getElementById('home-link');
+
+            // Menambahkan event listener untuk tautan "Home"
+            homeLink.addEventListener('click', function(event) {
+                // Mencegah perilaku default dari tautan
+                event.preventDefault();
+
+                // Menggunakan scrollIntoView untuk menggulir ke atas halaman dengan efek smooth scroll
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+            });
+        });
+    </script>
+</body>
+
+</html>
